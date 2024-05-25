@@ -1,56 +1,11 @@
-# Medical Chat Interface Application
+# General Medical Practitioner Chatbot
 
 ## Introduction
 
 This application is designed to process medical reports in PDF format and provide a chat interface where users can ask questions related to their medical reports. The application uses advanced natural language processing (NLP) techniques to analyze the reports and respond to user queries.
+
 <img width="879" alt="Screenshot 2024-05-25 224601" src="https://github.com/sandesh0202/General-Medical-Practitioner-Chatbot/assets/74035326/d0f92f55-31c9-4ffa-bb1b-905f95109b0a">
 <img width="892" alt="Screenshot 2024-05-25 224529" src="https://github.com/sandesh0202/General-Medical-Practitioner-Chatbot/assets/74035326/81e7dab9-1024-4d1e-a0b9-a02e66084990">
-
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Installation](#installation)
-3. [Project Structure](#project-structure)
-4. [Application Workflow](#application-workflow)
-5. [Explanation of Key Components](#explanation-of-key-components)
-6. [How to Use the Application](#how-to-use-the-application)
-7. [Running the Application](#running-the-application)
-
-## Prerequisites
-
-Before running this application, make sure you have the following installed:
-
-- Python 3.8 or higher
-- pip (Python package installer)
-
-## Installation
-
-1. **Clone the Repository**:
-
-    ```sh
-    git clone https://github.com/sandesh0202/General-Medical-Practitioner-Chatbot.git
-    ```
-
-2. **Install the Required Python Packages**:
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-## Project Structure
-
-Here's an overview of the project structure:
-
-
-Certainly! Below is the markdown code for the README file as requested.
-
-markdown
-Copy code
-# Medical Chat Interface Application
-
-## Introduction
-
-This application is designed to process medical reports in PDF format and provide a chat interface where users can ask questions related to their medical reports. The application uses advanced natural language processing (NLP) techniques to analyze the reports and respond to user queries.
 
 ## Table of Contents
 
