@@ -1,0 +1,11 @@
+qdrant-client
+langchain-text-splitters
+fastembed
+langchain-groq
+llama-index
+unstructured
+langchain
+langchain-openai
+langchain_community
+markdown
+flask

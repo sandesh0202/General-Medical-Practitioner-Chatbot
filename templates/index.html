@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Landing Page</title>
+  </head>
+  
+  <body class="text-gray-800 antialiased">
+    <main>
+      <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("https://res.cloudinary.com/dtsuvx8dz/image/upload/v1715507828/ggl3na9bphnfp8lemgm9.jpg");'>
+          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="sm:pr-12 flex flex-col justify-center items-center">
+                <h1 class="font-bold text-6xl drop-shadow-md py-5"
+                style='background: linear-gradient(to right, #FF4B2B, #FF416C); -webkit-text-fill-color: transparent; -webkit-background-clip: text;'>
+                Discover Your AI Health Partner
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                Connect the Dots Between Health Queries and Answers: Experience Instant Support from Your AI Medical Assistant, Anytime, Anywhere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px;">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+
+      <section class="pb-20 bg-gray-300 -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-xl font-semibold">Rapid Health Assistance</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                  Receive quick and accurate responses to your health inquiries, covering symptoms, treatments, and overall wellness.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-xl font-semibold">Ongoing Learning and Adaptation</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                  Our AI chatbot continuously evolves, staying updated with the latest medical advancements and best practices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-xl font-semibold">Customized Health Advice</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                  Obtain health recommendations tailored to your unique medical history and concerns.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center mt-32">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+               Get Professional Medical Insights Immediately
+              </h3>
+              <p class="text-lg font-base leading-relaxed mt-4 mb-4 text-gray-700">
+                Upload your PDF with medical records, symptoms, or health questions. Click 'Process' to receive an in-depth analysis from our AI-powered medical expert. Instantly gain detailed medical insights, diagnoses, treatment options, and personalized health advice. Begin your journey to better health with just a few clicks!
+              </p>
+              <form action="/process" method="post" enctype="multipart/form-data">
+                <div class="mt-10 flex flex-col justify-start items-start sm:flex-row sm:items-center gap-x-6">
+                  <button type="submit" class="my-2 bg-red-500 px-8 rounded-2xl py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Process</button>
+                  <input type="file" name="pdf_docs" id="pdf_docs" accept=".pdf" class="drop-shadow-md bg-white/50 font-semibold leading-6 text-gray-900 border border-red-300 py-2 px-4 rounded-2xl block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-400 hover:file:bg-red-100">
+                </div>
+              </form>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto sm:mt-0 mt-10">
+              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-red-500">
+                <img alt="..." src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1715511298/eezlacou1jc3wxatfh1e.jpg" class="w-full align-middle rounded-t-lg" />
+                <blockquote class="relative p-8 mb-4">
+                  <h4 class="text-xl font-bold text-white">Exceptional Services</h4>
+                  <p class="text-md font-light mt-2 text-white">
+                  Experience personalized health plans designed to cater to your individual medical needs and wellness objectives. Our AI chatbot assists you in crafting a customized roadmap for achieving and maintaining optimal health.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative bg-gray-900 pt-8 pb-6 text-white">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Stay Connected!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-100">Reach out to us on any platform, we respond within 1-2 business days.</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>

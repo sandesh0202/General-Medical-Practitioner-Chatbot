@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Interface</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl py-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-red-500">Chat Interface</h1>
+                <div class="w-screen flex flex-col justify-evenly items-center py-8 px-4">
+
+                    <div class="pb-2 w-full sm:w-[50rem] border border-red-500 mx-5">
+                        <h1 class="w-full py-2 px-3 bg-red-300 font-bold text-white">Ask question</h1>
+                        {% if chat_history %}
+                        <ul class="py-4 px-3">
+                            {% for message in chat_history %}
+                            <li class="bg-red-100 py-3 px-4 rounded-md text-slate-600 font-semibold sm:overflow-visible overflow-hidden sm:text-base text-xs font-mono">
+                                {{ message }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <div class="w-full flex justify-center">
+                            <p class="border border-2 border-red-500 text-red-600 px-3 py-2 w-1/2 flex justify-center font-mono">No chat history yet.</p>
+                        </div>
+                        {% endif %}
+                        <form action="/chat" method="post">
+                            <div class="w-full flex flex-row justify-evenly">
+                                <input class="bg-red-300 w-full mx-4 py-2 rounded-2xl text-white font-mono px-4 border border-2 border-black" placeholder="" type="text" name="user_question" id="user_question" required>
+                                <button class="px-7 mx-2 rounded-2xl bg-red-500 text-white hover:bg-red-400" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

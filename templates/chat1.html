@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Interface</title>
+</head>
+
+<style>
+    .model-dropdown:hover .dropdown-content {
+        display: block
+    }
+    
+
+</style>
+
+<body>
+    
+    <section>
+        <div>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl py-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-500 drop-shadow-md">Chat Interface</h1>
+                <div class="w-screen flex flex-col justify-evenly items-center py-8 px-4">
+                <form action="/chat" method="post">
+                        <select class="model-dropdown" id="models" name="models">
+                            <div class="dropdown-content">
+                            <option value="mistral">Mixtral</option>
+                            <option value="llama3">Llama3</option>
+                            <option value="gpt">GPT 3.5</option>
+                            </div>
+                        </select>
+                <div class="pb-2 w-full sm:w-[50rem]  mx-5">
+                    <h1 class="w-full py-2 px-3 font-bold text-black text-4xl">Ask Question</h1>
+                    
+                    {% if chat_history %}
+                    <ul class="py-4 px-3">
+                        {% for message in chat_history %}
+                        <li class="py-3 p-8 px-4 rounded-md sm:text-base text-xs">
+                            {% if loop.index is divisibleby 2 %}
+                            <!-- This is an answer -->
+                            <div class="bg-blue-100 p-8 text-slate-600 font-semibold overflow-hidden">
+                                {{ message | safe }}
+                            </div>
+                            {% else %}
+                            <!-- This is a question -->
+                            <div class="bg-gray-100 p-8 text-gray-800 font-semibold overflow-hidden font-size: large">
+                                {{ message  | safe}} 
+                            </div>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <div class="w-full flex justify-center">
+                        <p class="border border-2 border-blue-500 text-blue-600 px-3 py-2 w-1/2 flex justify-center font-mono">No chat history yet.</p>
+                    </div>
+                    {% endif %}
+                    
+                        <div class="w-full flex flex-row justify-evenly">
+                            <input
+                                class="bg-blue-300 w-full mx-4 py-2 rounded-2xl text-white font-mono px-4 border border-2 border-black"
+                                placeholder="Ask a question..." type="text" name="user_question" id="user_question" required>
+                            <button class="px-7 mx-2 rounded-2xl bg-blue-500 text-white hover:bg-blue-400" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
