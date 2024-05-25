@@ -3,6 +3,8 @@
 ## Introduction
 
 This application is designed to process medical reports in PDF format and provide a chat interface where users can ask questions related to their medical reports. The application uses advanced natural language processing (NLP) techniques to analyze the reports and respond to user queries.
+<img width="879" alt="Screenshot 2024-05-25 224601" src="https://github.com/sandesh0202/General-Medical-Practitioner-Chatbot/assets/74035326/d0f92f55-31c9-4ffa-bb1b-905f95109b0a">
+<img width="892" alt="Screenshot 2024-05-25 224529" src="https://github.com/sandesh0202/General-Medical-Practitioner-Chatbot/assets/74035326/81e7dab9-1024-4d1e-a0b9-a02e66084990">
 
 ## Table of Contents
 
