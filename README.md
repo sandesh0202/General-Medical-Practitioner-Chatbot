@@ -64,7 +64,7 @@ This application is designed to process medical reports in PDF format and provid
 
 Before running this application, make sure you have the following installed:
 
-- Python 3.8 or higher
+- Python 3.12
 - pip (Python package installer)
 
 ## Installation
@@ -73,7 +73,6 @@ Before running this application, make sure you have the following installed:
 
     ```sh
     git clone https://github.com/yourusername/medical-chat-interface.git
-    cd medical-chat-interface
     ```
 
 2. **Install the Required Python Packages**:
@@ -86,7 +85,7 @@ Before running this application, make sure you have the following installed:
 
 Here's an overview of the project structure:
 
-medical-chat-interface/
+General-Practitioner/
 │
 ├── data/
 │ └── output.md # Markdown file generated from PDF
