@@ -38,24 +38,6 @@ Before running this application, make sure you have the following installed:
     pip install -r requirements.txt
     ```
 
-## Project Structure
-
-Here's an overview of the project structure:
-
-General-Practitioner/
-│
-├── data/
-│ └── output.md # Markdown file generated from PDF
-│
-├── uploads/ # Directory to store uploaded PDF files
-│
-├── app.py # Main application file
-├── index.html # Main landing page HTML
-├── chat.html # Chat interface HTML
-├── requirements.txt # List of required Python packages
-└── README.md # This README file
-
-
 ## Application Workflow
 
 1. **File Upload**: Users upload their medical report PDFs via the web interface.
